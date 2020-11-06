@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF8AC4CD2555BD1400B3B407 /* ContactsAppChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC4CC2555BD1400B3B407 /* ContactsAppChallengeTests.swift */; };
 		DFF412B225549643003D59DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF412B125549643003D59DC /* AppDelegate.swift */; };
 		DFF412B425549643003D59DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF412B325549643003D59DC /* SceneDelegate.swift */; };
 		DFF412B625549643003D59DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF412B525549643003D59DC /* ViewController.swift */; };
@@ -16,7 +17,20 @@
 		DFF412C625549837003D59DC /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF412C525549837003D59DC /* Contacts.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DF8AC4CF2555BD1400B3B407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF412A625549643003D59DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFF412AD25549643003D59DC;
+			remoteInfo = ContactsAppChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		DF8AC4CA2555BD1400B3B407 /* ContactsAppChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsAppChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF8AC4CC2555BD1400B3B407 /* ContactsAppChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsAppChallengeTests.swift; sourceTree = "<group>"; };
+		DF8AC4CE2555BD1400B3B407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFF412AE25549643003D59DC /* ContactsAppChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsAppChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF412B125549643003D59DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFF412B325549643003D59DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DF8AC4C72555BD1400B3B407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFF412AB25549643003D59DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +60,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF8AC4C32555B99200B3B407 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DFF412B525549643003D59DC /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DF8AC4C42555B9A500B3B407 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFF412C525549837003D59DC /* Contacts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF8AC4C52555B9C900B3B407 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF8AC4CB2555BD1400B3B407 /* ContactsAppChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF8AC4CC2555BD1400B3B407 /* ContactsAppChallengeTests.swift */,
+				DF8AC4CE2555BD1400B3B407 /* Info.plist */,
+			);
+			path = ContactsAppChallengeTests;
+			sourceTree = "<group>";
+		};
 		DFF412A525549643003D59DC = {
 			isa = PBXGroup;
 			children = (
 				DFF412B025549643003D59DC /* ContactsAppChallenge */,
+				DF8AC4CB2555BD1400B3B407 /* ContactsAppChallengeTests */,
 				DFF412AF25549643003D59DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				DFF412AE25549643003D59DC /* ContactsAppChallenge.app */,
+				DF8AC4CA2555BD1400B3B407 /* ContactsAppChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,8 +115,9 @@
 			children = (
 				DFF412B125549643003D59DC /* AppDelegate.swift */,
 				DFF412B325549643003D59DC /* SceneDelegate.swift */,
-				DFF412B525549643003D59DC /* ViewController.swift */,
-				DFF412C525549837003D59DC /* Contacts.swift */,
+				DF8AC4C42555B9A500B3B407 /* Model */,
+				DF8AC4C52555B9C900B3B407 /* View */,
+				DF8AC4C32555B99200B3B407 /* Controllers */,
 				DFF412B725549643003D59DC /* Main.storyboard */,
 				DFF412BA25549645003D59DC /* Assets.xcassets */,
 				DFF412BC25549645003D59DC /* LaunchScreen.storyboard */,
@@ -73,6 +129,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DF8AC4C92555BD1400B3B407 /* ContactsAppChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF8AC4D12555BD1400B3B407 /* Build configuration list for PBXNativeTarget "ContactsAppChallengeTests" */;
+			buildPhases = (
+				DF8AC4C62555BD1400B3B407 /* Sources */,
+				DF8AC4C72555BD1400B3B407 /* Frameworks */,
+				DF8AC4C82555BD1400B3B407 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF8AC4D02555BD1400B3B407 /* PBXTargetDependency */,
+			);
+			name = ContactsAppChallengeTests;
+			productName = ContactsAppChallengeTests;
+			productReference = DF8AC4CA2555BD1400B3B407 /* ContactsAppChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DFF412AD25549643003D59DC /* ContactsAppChallenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFF412C225549645003D59DC /* Build configuration list for PBXNativeTarget "ContactsAppChallenge" */;
@@ -100,6 +174,10 @@
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = ericSwidjaja;
 				TargetAttributes = {
+					DF8AC4C92555BD1400B3B407 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = DFF412AD25549643003D59DC;
+					};
 					DFF412AD25549643003D59DC = {
 						CreatedOnToolsVersion = 11.7;
 					};
@@ -119,11 +197,19 @@
 			projectRoot = "";
 			targets = (
 				DFF412AD25549643003D59DC /* ContactsAppChallenge */,
+				DF8AC4C92555BD1400B3B407 /* ContactsAppChallengeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DF8AC4C82555BD1400B3B407 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFF412AC25549643003D59DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +223,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DF8AC4C62555BD1400B3B407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8AC4CD2555BD1400B3B407 /* ContactsAppChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFF412AA25549643003D59DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,6 +243,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF8AC4D02555BD1400B3B407 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFF412AD25549643003D59DC /* ContactsAppChallenge */;
+			targetProxy = DF8AC4CF2555BD1400B3B407 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DFF412B725549643003D59DC /* Main.storyboard */ = {
@@ -170,6 +272,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DF8AC4D22555BD1400B3B407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UZAZ4GBUSA;
+				INFOPLIST_FILE = ContactsAppChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericSwidjaja.ContactsAppChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactsAppChallenge.app/ContactsAppChallenge";
+			};
+			name = Debug;
+		};
+		DF8AC4D32555BD1400B3B407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UZAZ4GBUSA;
+				INFOPLIST_FILE = ContactsAppChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericSwidjaja.ContactsAppChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactsAppChallenge.app/ContactsAppChallenge";
+			};
+			name = Release;
+		};
 		DFF412C025549645003D59DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -323,6 +465,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DF8AC4D12555BD1400B3B407 /* Build configuration list for PBXNativeTarget "ContactsAppChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF8AC4D22555BD1400B3B407 /* Debug */,
+				DF8AC4D32555BD1400B3B407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DFF412A925549643003D59DC /* Build configuration list for PBXProject "ContactsAppChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
