@@ -8,14 +8,18 @@
 
 import Foundation
 
-//1. Create Contact Struct
+//1.Create Contact struct, with constants from the contactsDict
 struct Contact {
-    let idNumber: Int
+    
+    let phoneNumber: Int
     let firstName: String
     let lastName: String
+    var fullName: String {
+        return firstName + " " + lastName
+    }
     
     //2. Create static func to getContacts and returning as array of Contact
-    static func getContacts() -> [Contact] {
+    static func getAllContacts() -> [Contact] {
         
         let contactsDict = [03364152046: ("Christin", "Böttger"),
                             927525456: ("Joaquin", "Bravo"),
@@ -36,18 +40,20 @@ struct Contact {
                             01539627648: ("Jared", "Mitchelle"),
                             0157693915: ("Valdelaine", "de Souza"),
                             07798852536: ("Kristin", "Tausch"),
-                            00499228235: ("Marissa", "Rode"),
-        ]
-        //3. create empty array of contact
-        var contacts = [Contact]()
+                            00499228235: ("Marissa", "Rode")]
+        
+        //3. create empty array of all the contacts
+        var allContacts = [Contact]()
         
         //4. use for loop to iterate the dictionary, for each key and value in the dict, create a newContact constant as a newElement
-        for (key,value) in contactsDict {
-            let newContact = Contact(idNumber: key, firstName: value.0, lastName: value.1)
+        
+        for (key, value) in contactsDict {
+            let newContact = Contact(phoneNumber: key, firstName: value.0, lastName: value.1)
+            
             //5. add this newContact into the Contact array, and return all the contact
-            contacts.append(newContact)
+            allContacts.append(newContact)
         }
-        return contacts
+        
+        return allContacts
     }
 }
-
