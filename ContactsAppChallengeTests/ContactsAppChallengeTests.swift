@@ -1,10 +1,7 @@
-//
 //  ContactsAppChallengeTests.swift
 //  ContactsAppChallengeTests
-//
 //  Created by Eric Widjaja on 11/6/20.
 //  Copyright © 2020 ericSwidjaja. All rights reserved.
-//
 
 import XCTest
 
@@ -17,12 +14,10 @@ class ContactsAppChallengeTests: XCTestCase {
         let contactsCount = 20
         
         //Act
-        let actualContactsCount = Contact.getContacts().count
+        let actualContactsCount = Contact.getAllContacts().count
         
         //Assert
         XCTAssertEqual(contactsCount, actualContactsCount, "Value should be equal")
-        
     }
-
 }
 
